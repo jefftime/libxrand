@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.0.0 FATAL_ERROR)
+project(xrand LANGUAGES C)
+add_library(xrand "./src/xrand.c")
+add_dependencies(xrand sized_types)
+target_include_directories(xrand PUBLIC "./src/")
+target_link_libraries(xrand sized_types)
