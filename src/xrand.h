@@ -21,7 +21,7 @@
 
 #include <sized_types.h>
 
-void xrand_seed(int32_t seed);
-int32_t xrand(void);
+void xrand_seed(int32 seed);
+int32 xrand(void);
 
 #endif

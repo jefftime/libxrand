@@ -19,17 +19,17 @@
 #include "xrand.h"
 #include <sized_types.h>
 
-static int32_t XRAND = 0;
+static int32 XRAND = 0;
 
 /* **************************************** */
 /* Public */
 /* **************************************** */
 
-void xrand_seed(int32_t seed) {
+void xrand_seed(int32 seed) {
   XRAND = seed;
 }
 
-int32_t xrand(void) {
+int32 xrand(void) {
   XRAND ^= XRAND << 13;
   XRAND ^= XRAND >> 17;
   XRAND ^= XRAND << 5;
